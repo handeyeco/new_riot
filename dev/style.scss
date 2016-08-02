@@ -30,12 +30,23 @@ $light-bg: #F4F4F4;
 $main-font: 'Crimson Text', Georgia, serif;
 $special-font: 'Julius Sans One', Arial, sans-serif;
 
+$accent-border: 6px solid $accent-color;
+
 // nav { border: 1px solid $accent-color; }
 
 body, html {
-  padding: 2.6em 0 0 0;
+  padding: 1.50em 0 0 0;
   margin: 0;
   font-family: $main-font;
+}
+
+a, a:hover, a:link, a:visited, a:active {
+  text-decoration: none;
+  color: $accent-color;
+}
+
+img {
+  max-width: 100%;
 }
 
 /**************/
@@ -51,12 +62,14 @@ nav {
   right: 0;
   background-color: $main-bg;
   font-family: $special-font;
-  padding: 1em 2em 1em 1em;
+  padding: 0;
+  border-bottom: $accent-border;
 
   h1 {
     display: inline-block;
     margin: 0;
-    padding: 0.5em;
+    padding: 0.75em 0 0 0.5em;
+    font-size: 1.25em;
   }
 
   a, a:hover, a:link, a:visited, a:active {
@@ -79,9 +92,9 @@ nav {
 /***********/
 
 .nr-content-container {
-  border-top: 6px solid $accent-color;
-  margin-left: 10%;
-  padding: 0 15% 3em 5%;
+  border-top: 0px;
+  margin: 0;
+  padding: 1em;
   background-color: $main-bg;
 
   .nr-post-title {
@@ -91,10 +104,62 @@ nav {
     }
   }
 
-  a, a:hover, a:link, a:visited, a:active {
-    text-decoration: none;
-    color: $accent-color;
+}
+
+/**********/
+/**********/
+/* Footer */
+/**********/
+/**********/
+
+footer {
+  text-align: center;
+  padding: 3em 0;
+  background-color: $light-bg;
+
+  a.nr-footer-title {
+    font: {
+      family: $special-font;
+      size: 1.5em;
+    }
   }
 
+  i.nr-social-icon {
+    border-radius: 50%;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.2em;
+    background-color: $accent-color;
+    color: white;
+  }
+}
+
+/**************/
+/**************/
+/* Responsive */
+/**************/
+/**************/
+
+@media screen and (min-width : 480px) {
+
+  body {
+    padding: 3.6em 0 0 0;
+  }
+
+  nav {
+    padding: 1em 2em 1em 1em;
+    border: 0px;
+
+    h1 {
+      font-size: 1.5em;
+      padding: 0.5em;
+    }
+  }
+
+  .nr-content-container {
+    margin-left: 10%;
+    padding: 0 15% 3em 5%;
+    border-top: $accent-border;
+  }
 
 }

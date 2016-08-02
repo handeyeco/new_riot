@@ -23,7 +23,7 @@
       </a>
     </h1>
 
-    <a class="nr-big-button" href="http://matthewbryancurtis.com">About</a>
+    <a class="nr-big-button" href="http://matthewbryancurtis.com" title="Matthew Curtis Resume" target="_blank">About</a>
   </nav>
 
   <!-- ============= -->

@@ -14,8 +14,13 @@
     </h2>
 
     <p class="nr-post-content">
-      <?php the_excerpt(); ?>
-      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a>
+      <?php if ( is_single() ) : ?>
+        <?php the_content(); ?>
+      <?php else : ?>
+        <?php the_excerpt(); ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a>
+      <?php endif; ?>
+
     </p>
   </article>
 
