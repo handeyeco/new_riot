@@ -10,6 +10,10 @@ It will utilize `excerpt` rather than `content` for concise introductions to blo
 
 ## Commits
 
+### August, 2 2016 9:37AM
+
+Add "The Loop" to `index.php` and add `functions.php` to start loading dependencies.
+
 ### August, 1 2016 11:08PM
 
 Initial commit and "working" theme (i.e. `index.php` and `style.css`) along the `header.php` and `footer.php`.
