@@ -17,11 +17,16 @@
   <!-- Navigation -->
   <!-- ========== -->
   <nav>
-    <h1><?php bloginfo('name'); ?></h1>
-    <a href="http://matthewbryancurtis.com">About Me</a>
+    <h1 class="nr-blog-title">
+      <a href="<?php echo get_home_url(); ?>" title="<?php bloginfo('name'); ?>">
+        <?php bloginfo('name'); ?>
+      </a>
+    </h1>
+
+    <a class="nr-big-button" href="http://matthewbryancurtis.com">About</a>
   </nav>
 
   <!-- ============= -->
   <!-- Begin Content -->
   <!-- ============= -->
-  <div class="content-container">
+  <div class="nr-content-container">

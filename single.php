@@ -1,21 +1,20 @@
 <?php get_header(); ?>
 
-<!-- ======================= -->
-<!-- Post list with excerpts -->
-<!-- ======================= -->
+<!-- ====================== -->
+<!-- Show post with content -->
+<!-- ====================== -->
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <article>
-    <h2 class="nr-post-title">
+    <h2>
       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
         <?php the_title(); ?>
       </a>
     </h2>
 
-    <p class="nr-post-content">
-      <?php the_excerpt(); ?>
-      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a>
+    <p>
+      <?php the_content(); ?>
     </p>
   </article>
 

@@ -1,4 +1,4 @@
-  </div> <!-- End content container -->
+  </div> <!-- End nr-content-container -->
 
   <footer>
     <a href="http://matthewbryancurtis.com">Content and Theme by Matthew Curtis</a>

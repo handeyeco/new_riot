@@ -12,57 +12,89 @@ Tags: minimalist, red, blog
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+
+// @import 'reset';
+
 /************/
 /************/
 /* New Riot */
 /************/
 /************/
+
+$main-color: #000000;
+$main-bg: #FFFFFF;
+$accent-color: #8E2B22;
+$light-bg: #F4F4F4;
+
+$main-font: 'Crimson Text', Georgia, serif;
+$special-font: 'Julius Sans One', Arial, sans-serif;
+
+// nav { border: 1px solid $accent-color; }
+
 body, html {
   padding: 2.6em 0 0 0;
   margin: 0;
-  font-family: "Crimson Text", Georgia, serif; }
+  font-family: $main-font;
+}
 
 /**************/
 /**************/
 /* Navigation */
 /**************/
 /**************/
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #FFFFFF;
-  font-family: "Julius Sans One", Arial, sans-serif;
-  padding: 1em 2em 1em 1em; }
-  nav h1 {
+  background-color: $main-bg;
+  font-family: $special-font;
+  padding: 1em 2em 1em 1em;
+
+  h1 {
     display: inline-block;
     margin: 0;
-    padding: 0.5em; }
-  nav a, nav a:hover, nav a:link, nav a:visited, nav a:active {
+    padding: 0.5em;
+  }
+
+  a, a:hover, a:link, a:visited, a:active {
     text-decoration: none;
-    color: #000000; }
-  nav a.nr-big-button {
+    color: $main-color;
+  }
+
+  a.nr-big-button {
     float: right;
     padding: 1em;
-    background-color: #8E2B22;
-    color: white; }
+    background-color: $accent-color;
+    color: white;
+  }
+}
 
 /***********/
 /***********/
 /* Content */
 /***********/
 /***********/
+
 .nr-content-container {
-  border-top: 6px solid #8E2B22;
+  border-top: 6px solid $accent-color;
   margin-left: 10%;
   padding: 0 15% 3em 5%;
-  background-color: #FFFFFF; }
-  .nr-content-container .nr-post-title a, .nr-content-container .nr-post-title a:hover, .nr-content-container .nr-post-title a:link, .nr-content-container .nr-post-title a:visited, .nr-content-container .nr-post-title a:active {
-    text-decoration: none;
-    color: #000000; }
-  .nr-content-container a, .nr-content-container a:hover, .nr-content-container a:link, .nr-content-container a:visited, .nr-content-container a:active {
-    text-decoration: none;
-    color: #8E2B22; }
+  background-color: $main-bg;
 
-/*# sourceMappingURL=style.css.map */
+  .nr-post-title {
+    a, a:hover, a:link, a:visited, a:active {
+      text-decoration: none;
+      color: $main-color;
+    }
+  }
+
+  a, a:hover, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: $accent-color;
+  }
+
+
+}
