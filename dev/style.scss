@@ -25,7 +25,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 $main-color: #000000;
 $main-bg: #FFFFFF;
 $accent-color: #8E2B22;
-$light-bg: #F4F4F4;
+$light-bg: #F6F6F6;
+$ultra-light-bg: #FCFCFC;
 
 $main-font: 'Crimson Text', Georgia, serif;
 $special-font: 'Julius Sans One', Arial, sans-serif;
@@ -68,7 +69,7 @@ nav {
   h1 {
     display: inline-block;
     margin: 0;
-    padding: 0.75em 0 0 0.5em;
+    padding: 0.7em 0 0 0.55em;
     font-size: 1.25em;
   }
 
@@ -95,10 +96,14 @@ nav {
   border-top: 0px;
   margin: 0;
   padding: 1em;
-  background-color: $main-bg;
+
+  img {
+    display: block;
+    margin: auto;
+  }
 
   .nr-post-title {
-    a, a:hover, a:link, a:visited, a:active {
+    a:link, a:visited, a:active {
       text-decoration: none;
       color: $main-color;
     }
@@ -140,7 +145,7 @@ footer {
 /**************/
 /**************/
 
-@media screen and (min-width : 480px) {
+@media screen and (min-width : 768px) {
 
   body {
     padding: 3.6em 0 0 0;

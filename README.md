@@ -8,7 +8,20 @@ Bold lines will create a rigid, offset structure ideal for collapsing down to mo
 
 It will utilize `excerpt` rather than `content` for concise introductions to blog posts.
 
+## Todo
+
+* Add comments section
+* Add search feature
+* Add share buttons?
+* Add post dates?
+* Figure out screenshot.png issue
+* Figure out how to remove hard-coded things to make it sharable.
+
 ## Commits
+
+### August 2, 2016 7:42PM
+
+Finished basic layout, uploaded to live site, and fixed some bugs.
 
 ### August 2, 2016 1:03PM
 

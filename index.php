@@ -16,6 +16,7 @@
     <p class="nr-post-content">
       <?php if ( is_single() ) : ?>
         <?php the_content(); ?>
+        <a href="<?php echo get_home_url(); ?>" title="<?php bloginfo('name'); ?>">Return Home</a>
       <?php else : ?>
         <?php the_excerpt(); ?>
         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a>
@@ -34,6 +35,8 @@
     <h2>Hmm...</h2>
 
     <p>No content found, sorry.</p>
+
+    <a href="<?php echo get_home_url(); ?>" title="<?php bloginfo('name'); ?>">Return to the main page.</a>
   </article>
 
 <?php endif; ?>
