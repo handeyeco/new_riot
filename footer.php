@@ -1,9 +1,7 @@
   </div> <!-- End nr-content-container -->
 
   <footer>
-    <!--<a class="nr-footer-title" href="<?php echo get_home_url(); ?>" title="<?php bloginfo('name'); ?>">
-      <?php bloginfo('name'); ?>
-    </a>-->
+    <?php get_search_form(); ?>
 
     <div class="nr-social-container">
       <a href="https://github.com/matthewbryancurtis" title="GitHub" target="_blank">

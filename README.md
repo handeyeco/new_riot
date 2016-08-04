@@ -10,14 +10,18 @@ It will utilize `excerpt` rather than `content` for concise introductions to blo
 
 ## Todo
 
-* Add comments section
-* Add search feature
-* Add share buttons?
-* Add post dates?
-* Figure out screenshot.png issue
-* Figure out how to remove hard-coded things to make it sharable.
+- [ ] Add comments section
+- [x] Add search feature
+- [ ] Add share buttons?
+- [ ] Add post dates?
+- [ ] Figure out screenshot.png issue
+- [ ] Figure out how to remove hard-coded things to make it sharable.
 
 ## Commits
+
+### August 3, 2016 5:35PM
+
+Add search feature and search feedback.
 
 ### August 2, 2016 7:42PM
 
