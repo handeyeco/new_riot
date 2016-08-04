@@ -53,9 +53,15 @@ nav {
     color: #000000; }
   nav a.nr-big-button {
     float: right;
-    padding: 1em;
+    padding: 0.75em 1em;
     background-color: #8E2B22;
-    color: white; }
+    color: #FFFFFF;
+    border: 4px solid transparent;
+    transition: all 0.5s ease; }
+    nav a.nr-big-button:hover {
+      background-color: #FFFFFF;
+      color: #8E2B22;
+      border: 4px solid #8E2B22; }
 
 /***********/
 /***********/
@@ -90,7 +96,8 @@ footer {
     border-radius: 0;
     border: none;
     outline-style: none;
-    border: 4px solid #F6F6F6;
+    border: 4px solid transparent;
+    transition: border 2s ease;
     font-size: 1em;
     font-family: "Crimson Text", Georgia, serif;
     font-weight: normal; }
@@ -102,7 +109,13 @@ footer {
     padding: 1em;
     font-size: 1.2em;
     background-color: #8E2B22;
-    color: white; }
+    border: 4px solid transparent;
+    color: #FFFFFF;
+    transition: all 0.5s ease; }
+    footer i.nr-social-icon:hover {
+      background-color: #FFFFFF;
+      border: 4px solid #8E2B22;
+      color: #8E2B22; }
 
 /**************/
 /**************/

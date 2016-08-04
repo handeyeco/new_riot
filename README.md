@@ -14,7 +14,7 @@ It will utilize `excerpt` rather than `content` for concise introductions to blo
 - [x] Add search feature
 - [ ] Add share buttons?
 - [ ] Add post dates?
-- [ ] Figure out screenshot.png issue
+- [x] Figure out screenshot.png issue (Don't forget about permissions!)
 - [ ] Figure out how to remove hard-coded things to make it sharable.
 
 ## Commits
